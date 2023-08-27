@@ -1,0 +1,7 @@
+FROM registry.access.redhat.com/ubi9/httpd-24
+
+COPY html /var/www/html
+
+USER default
+
+CMD run-httpd
