@@ -5,7 +5,7 @@ USER root
 RUN dnf -y update
 
 RUN echo "Installing podman" \
-    && dnf -y install podman
+    && dnf -y install podman htop
 
 # Default podman storage driver should be overlay
 RUN podman info | grep -i graphDriverName
